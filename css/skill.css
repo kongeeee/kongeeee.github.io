@@ -1,0 +1,26 @@
+.container{
+    top : 50%;
+    left : 50%;
+    width : 750px;
+    height : 450px;
+    margin : -225px 0 0 -375px;
+    background-color: white;
+    z-index: 1;
+    box-shadow: 3px 3px 6px 6px #011B38;
+    position : absolute;
+}
+
+img[alt="java"]{
+    width : 200px;
+    height : 110px;
+}
+
+img[alt="javascript"]{
+    width : 120px;
+    height : 110px;
+}
+
+img[alt="css"]{
+    width : 270px;
+    height : 120px;
+}
