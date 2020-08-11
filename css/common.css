@@ -1,6 +1,7 @@
 @media (min-width: 768px) {
     .container {
         width: 750px;
+        height : 750px;
     }
 }
 
@@ -67,6 +68,28 @@
 }
 /* 밤하늘 & 별찍기 */
 
+/* 스크롤 */
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+  
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ccc; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #AAA; 
+}
+
+
 /* container 안 nav */
 .nav{
     border:1px solid #CCCCCC;
@@ -104,6 +127,7 @@ i, a{
     cursor: pointer;
 }
 
+/* 확대 */
 a:hover{
     transform: scale(1.1);
     -webkit-transform: scale(1.1);
@@ -118,7 +142,7 @@ a:hover{
     border : 1px solid #CCCCCC;
     border-radius: 15px;
     margin-top : 6px;
-    height : 23px;
+    height : 25px;
     box-shadow: 1px 1px 2px #CCC;
 }
 .urlbox > p{
@@ -129,9 +153,18 @@ a:hover{
 p.url{
     position:relative;
     display: inline-block;
-    height: 20px; 
+    height: 22px; 
     overflow: hidden;
     animation: typingAni 4s steps(30, end) 1;
+    font-size: 18px;
+    margin : 0;
+}
+
+p.notyping{
+    position:relative;
+    display: inline-block;
+    height: 22px; 
+    overflow: hidden;
     font-size: 18px;
     margin : 0;
 }

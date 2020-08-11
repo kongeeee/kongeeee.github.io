@@ -36,7 +36,7 @@
         <div class="row text-center">
             <div class="col-xs-1"><a class="btn btn-light" data-tooltip-text="메인으로" href="index.html" role="button"><i class="fas fa-arrow-left"></i></a></div>
             <div class="col-xs-10 urlbox">
-                <p class="url">강보흔의 포트폴리오 입니다.</p>
+                <p class="notyping">강보흔의 포트폴리오 입니다.</p>
             </div>
             <div class="col-xs-1"><a class="btn btn-light" href="#" role="button"><i class="far fa-star"></i></a></div>
         </div>
@@ -46,22 +46,23 @@
                     <!-- <div class="panel-heading"><img src="img/adult-art-artwork-1081685.jpg" class="card-img-top" alt="강보흔"></div> -->
                     <div class="panel-body">
                         <h2 class=""><strong>강보흔</strong></h2>
-                        <p class="panel-text">다양한 프로젝트를 하면서 아직도 모르는 것, 배워야 할 것이 많다고 느꼈습니다.</p>
-                        <p class="panel-text">안되는 것에 포기 하지 않고 계속 도전 하는 개발자가 되겠습니다.</p>
+                        <p class="panel-text nomargin">다양한 프로젝트를 하면서 모르는 것,</p><p>배워야 할 것이 많다고 느꼈습니다.</p>
+                        <p class="panel-text nomargin">안되는 것에 포기 하지 않고 계속 도전 하는 개발자가 되겠습니다.</p>
                     </div>
                     <div class="list-group" style="width : 300px;">
-                        <a href="#" class="list-group-item">
-                            <p><i class="fas fa-at"></i> e-mail</p>
-                            <p>rlwjd25@naver.com</p>
+                        <a href="#" class="list-group-item email" data-tooltip-text="클릭 시 복사됩니다">
+                            <div><i class="fas fa-at"></i> e-mail</div>
+                            <p class="p">rlwjd25@naver.com</p>
                         </a>
-                        <a href="#" class="list-group-item">
-                            <p><i class="fas fa-mobile-alt"></i> phone number</p>
-                            <p>010-6689-3542</p>
+                        <a href="#" class="list-group-item phone" data-tooltip-text="클릭 시 복사됩니다">
+                            <div><i class="fas fa-mobile-alt"></i> phone number</div>
+                            <p id="phonenumber">010-6689-3542</p>
                         </a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <input id="clip_target" type="text" value="" style="position:absolute;top:-9999em;"/>
 </body>
 </html>

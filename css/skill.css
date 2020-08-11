@@ -2,25 +2,82 @@
     top : 50%;
     left : 50%;
     width : 750px;
-    height : 450px;
-    margin : -225px 0 0 -375px;
+    height : 500px;
+    margin : -250px 0 0 -375px;
     background-color: white;
     z-index: 1;
     box-shadow: 3px 3px 6px 6px #011B38;
     position : absolute;
 }
 
-img[alt="java"]{
-    width : 200px;
-    height : 110px;
+/* tab */
+ul.tabs{
+	margin: 10px 0 1px 0;
+	padding: 0px;
+	list-style: none;
 }
 
-img[alt="javascript"]{
-    width : 120px;
-    height : 110px;
+ul.tabs li{
+	background: none;
+	color: #222;
+	display: inline-block;
+	border-top : 1px solid #ccc;
+	border-right : 1px solid #ccc;
+	border-left : 1px solid #ccc;
+	padding: 10px 15px;
+	cursor: pointer;
 }
 
-img[alt="css"]{
-    width : 270px;
-    height : 120px;
+ul.tabs li:hover{
+	background: #ededed;
+	color: #222;
+}
+
+ul.tabs li.current{
+	background: rgba(0,16,54,0.5);
+	color : white;
+}
+
+.current i{
+	color : white;
+}
+
+.tab-content{
+	display: none;
+	border : 1px solid #ccc;
+	padding: 5px;
+	height : 355px;
+	position : relative;
+}
+
+.tab-content.current{
+	display : inherit;
+	overflow: auto;
+	overflow-x: hidden;
+}
+
+.tab-content.current > .row{
+	width : 740px;
+	height : 340px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-48%, -50%);
+}
+
+.skill{
+	padding-top : 7%;
+}
+
+.db{
+	padding-top : 3%;
+}
+
+.panel-heading {
+	font-size : 16px;
+}
+
+p{
+	font-size : 14px;
+	margin : 0;
 }

@@ -16,3 +16,7 @@
     left : 28%;
     right : 28%;
 }
+
+.nomargin {
+    margin : 0;
+}

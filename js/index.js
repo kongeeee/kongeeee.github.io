@@ -52,5 +52,32 @@ $(document).ready(function(){
             .appendTo("#lower");
         }
     };
-}).resize();
 
+    // 복사하기
+    $(".list-group-item").click(function(){
+        var text = $(this).find("p").text();
+        console.log(text);
+        var input = $("#clip_target").val(text.split(' ').join(''));
+        $("#clip_target").select();
+        try {
+            var successful = document.execCommand('copy');
+            if(successful) {
+                alert("복사되었습니다.");
+            }
+        }catch(err) {
+            alert("복사에 실패하였습니다.");
+        }
+    });
+
+    // 
+    $("ul.tabs li").click(function(){
+        var tab_id = $(this).attr("data-tab");
+
+        $("ul.tabs li").removeClass("current");
+        $(".tab-content").removeClass("current");
+
+        $(this).addClass("current");
+        $("#"+tab_id).addClass("current");
+    });
+
+}).resize();
